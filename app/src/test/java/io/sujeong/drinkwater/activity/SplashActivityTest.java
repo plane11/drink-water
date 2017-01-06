@@ -9,6 +9,8 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import io.sujeong.drinkwater.BuildConfig;
 import io.sujeong.drinkwater.R;
 
@@ -19,16 +21,19 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Config(constants = BuildConfig.class)
 public class SplashActivityTest {
 
-    SplashActivity subject;
+    private SplashActivity subject;
+
+    @BindView(R.id.splash_img)
+    ImageView splashImageView;
 
     @Before
     public void setUp() throws Exception {
         subject = Robolectric.setupActivity(SplashActivity.class);
+        ButterKnife.bind(this, subject);
     }
 
     @Test
     public void whenLaunchApp_thenShowSplashActivity_containsImage() throws Exception {
-        ImageView splashImageView = (ImageView) subject.findViewById(R.id.splash_img);
         assertThat(splashImageView.getDrawable()).isNotNull();
     }
 
