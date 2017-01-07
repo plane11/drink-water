@@ -23,7 +23,27 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="2000mL"
+            android:layout_marginTop="10dp"
             android:textColor="@color/basic_light_text"
             android:textAlignment="center"/>
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/cup_full_blue" />
+    </LinearLayout>
+
+
+
 </LinearLayout>
