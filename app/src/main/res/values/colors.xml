@@ -5,5 +5,5 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="default_background">#FAFAFA</color>
-    <color name="basic_text">#333333</color>
+    <color name="basic_light_text">#333333</color>
 </resources>

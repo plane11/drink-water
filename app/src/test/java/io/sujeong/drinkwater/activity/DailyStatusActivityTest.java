@@ -22,8 +22,11 @@ public class DailyStatusActivityTest {
 
     private DailyStatusActivity subject;
 
-    @BindView(R.id.drink_status_total_text)
-    TextView drinkStatusTotalTextView;
+    @BindView(R.id.drink_status_total_percentage)
+    TextView drinkStatusTotalPercentageTextView;
+
+    @BindView(R.id.drink_status_total_quantity)
+    TextView drinkStatusTotalQuantityTextView;
 
     @Before
     public void setUp() throws Exception {
@@ -32,7 +35,12 @@ public class DailyStatusActivityTest {
     }
 
     @Test
-    public void whenLoadActivity_thenShowDrinkTotalText() throws Exception {
-        assertThat(drinkStatusTotalTextView.getText().toString().endsWith("%"));
+    public void whenLoadActivity_thenShowDrinkTotalPercentage() throws Exception {
+        assertThat(drinkStatusTotalPercentageTextView.getText().toString()).endsWith("%");
+    }
+
+    @Test
+    public void whenLoadActivity_thenShowDrinkTotalQuantity() throws Exception {
+        assertThat(drinkStatusTotalQuantityTextView.getText().toString()).endsWith("mL");
     }
 }

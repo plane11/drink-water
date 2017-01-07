@@ -10,8 +10,11 @@ import io.sujeong.drinkwater.R;
 
 public class DailyStatusActivity extends Activity {
 
-    @BindView(R.id.drink_status_total_text)
-    TextView drinkStatusTotalTextView;
+    @BindView(R.id.drink_status_total_percentage)
+    TextView drinkStatusTotalPercentageTextView;
+
+    @BindView(R.id.drink_status_total_quantity)
+    TextView drinkStatusTotalQuantityTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +23,8 @@ public class DailyStatusActivity extends Activity {
 
         ButterKnife.bind(this);
 
-        drinkStatusTotalTextView.setText("100%");
+        drinkStatusTotalPercentageTextView.setText("100%");
+        drinkStatusTotalQuantityTextView.setText("2000mL");
     }
 
     @Override
