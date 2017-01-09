@@ -23,13 +23,13 @@ public class DailyStatusActivity extends Activity {
 
         ButterKnife.bind(this);
 
-        drinkStatusTotalPercentageTextView.setText("100%");
-        drinkStatusTotalQuantityTextView.setText("2000mL");
+        loadData();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        loadData();
     }
 
     @Override
@@ -40,5 +40,10 @@ public class DailyStatusActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+
+    private void loadData() {
+        drinkStatusTotalPercentageTextView.setText("100%");
+        drinkStatusTotalQuantityTextView.setText("2000mL");
     }
 }
