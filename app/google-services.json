@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "1048781499295",
-    "firebase_url": "https://drinkwater-2cd73.firebaseio.com",
-    "project_id": "drinkwater-2cd73",
-    "storage_bucket": "drinkwater-2cd73.appspot.com"
+    "project_number": "195565893032",
+    "firebase_url": "https://drinkwater-e22fc.firebaseio.com",
+    "project_id": "drinkwater-e22fc",
+    "storage_bucket": "drinkwater-e22fc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1048781499295:android:a6515b6d7513eaf2",
+        "mobilesdk_app_id": "1:195565893032:android:a6515b6d7513eaf2",
         "android_client_info": {
           "package_name": "io.sujeong.drinkwater"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1048781499295-bstq5m0eja492ifvfiphohjb9np4g2eu.apps.googleusercontent.com",
+          "client_id": "195565893032-tpc79jis2c3f3g50gs2sl3e45t397b5h.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC09Px_U9yml40PkDY8Irso-zZYHbqCXo8"
+          "current_key": "AIzaSyCBpSizc8pegBD-50WTBu5V8CWEZw4qKe8"
         }
       ],
       "services": {
