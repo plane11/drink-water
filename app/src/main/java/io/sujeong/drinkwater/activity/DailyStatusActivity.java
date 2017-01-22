@@ -1,14 +1,15 @@
 package io.sujeong.drinkwater.activity;
 
-import android.app.Activity;
+import android.app.ActionBar;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.sujeong.drinkwater.R;
 
-public class DailyStatusActivity extends Activity {
+public class DailyStatusActivity extends AppCompatActivity {
 
     @BindView(R.id.drink_status_total_percentage)
     TextView drinkStatusTotalPercentageTextView;
@@ -23,7 +24,17 @@ public class DailyStatusActivity extends Activity {
 
         ButterKnife.bind(this);
 
+        initActionBar();
+
         loadData();
+
+    }
+
+    private void initActionBar() {
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(false);
     }
 
     @Override
