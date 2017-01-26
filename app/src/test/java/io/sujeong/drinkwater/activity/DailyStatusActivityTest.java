@@ -1,5 +1,8 @@
 package io.sujeong.drinkwater.activity;
 
+import android.support.v4.media.MediaMetadataCompat;
+import android.support.v7.app.ActionBar;
+import android.view.View;
 import android.widget.TextView;
 
 import org.junit.Before;
@@ -42,5 +45,18 @@ public class DailyStatusActivityTest {
     @Test
     public void whenLoadActivity_thenShowDrinkTotalQuantity() throws Exception {
         assertThat(drinkStatusTotalQuantityTextView.getText().toString()).endsWith("mL");
+    }
+
+    @Test
+    public void whenLoadActivity_thenLoadingCustomActionbar_withDefaultDateText() throws Exception {
+        ActionBar customActionbar = subject.getSupportActionBar();
+        assertThat(customActionbar).isNotNull();
+
+        View customActionbarView = customActionbar.getCustomView();
+        assertThat(customActionbarView).isNotNull();
+
+        TextView dateText = (TextView) customActionbarView.findViewById(R.id.drink_status_date_text);
+        assertThat(dateText).isNotNull();
+        assertThat(dateText.getText().toString()).isEqualTo("Today");
     }
 }
