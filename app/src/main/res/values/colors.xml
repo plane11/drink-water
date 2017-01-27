@@ -6,4 +6,6 @@
 
     <color name="default_background">#FAFAFA</color>
     <color name="basic_light_text">#333333</color>
+
+    <color name="basic_blue_text">#5aafec</color>
 </resources>
