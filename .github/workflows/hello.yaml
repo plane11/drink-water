@@ -4,5 +4,6 @@ jobs:
   Hello-World-Job:
     runs-on:
       - codebuild-githubwebhooktest-${{ github.run_id }}-${{ github.run_attempt }}
+      - buildspec-override:true
     steps:
       - run: echo "Hello World!"
