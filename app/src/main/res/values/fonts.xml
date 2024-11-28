@@ -1,0 +1,8 @@
+<resources>
+    <string name="font_family_light">Roboto-Light</string>
+    <string name="font_family_medium">Roboto-Medium</string>
+    <string name="font_family_regular">Roboto-Regular</string>
+    <string name="font_family_condensed">RobotoCondensed-Regular</string>
+    <string name="font_family_black">Roboto-Black</string>
+    <string name="font_family_thin">Roboto-Thin</string>
+</resources>

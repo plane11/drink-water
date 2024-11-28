@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Drink Water</string>
+    <string name="daily_status_today">Today</string>
+</resources>
