@@ -4,5 +4,6 @@ jobs:
   Hello-World-Job-githubauto:
     runs-on:
       - codebuild-githubauto-${{ github.run_id }}-${{ github.run_attempt }}
+      - buildspec-override:true
     steps:
       - run: echo "Hello World githubauto"
