@@ -1,0 +1,9 @@
+name: Hello World 175620441800427
+on: [push]
+jobs:
+  Hello-World-Job:
+    runs-on:
+      - codebuild-github-vpc-project-${{ github.run_id }}-${{ github.run_attempt }}
+      - buildspec-override:true
+    steps:
+      - run: echo "Hello World! - 175620441800427"
