@@ -1,0 +1,8 @@
+name: Hello World auto
+on: [push]
+jobs:
+  Hello-World-Job-auto:
+    runs-on:
+      - codebuild-github-auto-webhook-project-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - run: echo "Hello World auto"
